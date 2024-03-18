@@ -6,9 +6,11 @@ type MenuIds = "first" | "second" | "last";
 
 type Menu = { id: MenuIds; title: string };
 
+type SelectedMenu = { id: MenuIds }
+
 type MenuSelected = {
-  selectedMenu: { id: MenuIds };
-};
+	selectedMenu: SelectedMenu
+}
 
 // Додати тип Menu Selected
 
